@@ -1,0 +1,501 @@
+<html lang="tr">
+
+<head>
+    <script data-ad-client="ca-pub-7275027130251912" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güncel Haberler</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/vendor/bootstrap-4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/main.css">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-7988377-6"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron" />
+    <link href="floaty.css" rel="stylesheet">
+
+
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-7988377-6');
+    </script>
+</head>
+
+<style>
+    .newsStyle {
+        margin: 2vw 10vw 0vw 10vw;
+    }
+
+    .responsivecss {
+        display: block;
+    }
+
+    body {
+        background-color: #efefdf;
+    }
+
+    div.floaty {
+        top: 50%;
+        left: 0;
+    }
+
+    .sticky-ball {
+        width: 60px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 60px;
+        position: absolute;
+        top: 50%;
+        left: 3rem;
+
+    }
+
+    .ball1 {
+        width: 120px;
+        height: 60px;
+        border-radius: 60px;
+        position: absolute;
+        top: -100px;
+        left: 0px;
+    }
+
+    .ball2 {
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        position: absolute;
+        left: 80px;
+        top: -80px;
+    }
+
+    .ball3 {
+        width: 120px;
+        height: 60px;
+        border-radius: 60px;
+        position: absolute;
+        left: 110px;
+        top: 0px;
+    }
+
+    .ball4 {
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        position: absolute;
+        left: 80px;
+        top: 80px;
+    }
+
+    .ball5 {
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        position: absolute;
+        bottom: -100px;
+        left: 0px;
+    }
+
+    .tog {
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+    }
+
+    .display {
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        background-color: transparent;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .fa {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .view {
+        display: none;
+    }
+
+    .o {
+        font-size: 20px;
+        left: 22px;
+        top: 20px;
+    }
+
+    .fa.fa-times {
+        transition: .4s;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .fa.fa-circle-thin {
+        font-size: 45px;
+        left: 10px;
+        top: 8px;
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+    }
+
+    .clock {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: white;
+        font-size: 11px;
+        font-family: Orbitron;
+        letter-spacing: 7px;
+
+
+
+    }
+
+    #page-content {
+        flex: 1 0 auto;
+    }
+
+    #sticky-footer {
+        flex-shrink: none;
+    }
+
+    .bg-dark {
+        background-color: #337ab7 !important;
+    }
+
+    .text-white-50 {
+        color: white !important;
+    }
+</style>
+
+<body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+
+    <div class="floaty sticky-ball">
+        <i class="fa fa-times o"></i>
+        <div class="tog ball1">
+            <div id="iftar-sahur"></div>
+        </div>
+        <div class="tog ball3">
+            <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        </div>
+    </div>
+
+    <div style="overflow: hidden;">
+
+
+
+        <div id="container" style="overflow: auto;">
+
+            <table class="table table-hover table-responsive-md">
+                <thead>
+                    <tr>
+                        <th scope="col">Hicri</th>
+                        <th scope="col">Miladi</th>
+                        <th scope="col">Imsak</th>
+                        <th scope="col">Gunes</th>
+                        <th scope="col">Ogle</th>
+                        <th scope="col">Ikindi</th>
+                        <th scope="col">Aksam</th>
+                        <th scope="col">Yatsi</th>
+                    </tr>
+                </thead>
+                <tbody id="days">
+
+                </tbody>
+            </table>
+        </div>
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+            <div class="container text-center">
+                <small>2020 &copy; Sedat Er</small>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+        var todayData;
+        var showTimeSaniye = 0;
+
+        $(".tog").toggleClass("display");
+        $(".tog .fa").toggleClass("view");
+        $("#MyClockDisplay").toggleClass("view");
+        $("#iftar-sahur").toggleClass("view");
+        $(".o").toggleClass("fa-times fa-circle-thin")
+
+        const triggerSales = () => {
+            setTimeout(function () { showTime() }, 1000);
+        }
+
+        function fetchLiveSales() {
+            $.getJSON("ezansaatleri.json", function (data) {
+
+                const latestSales = data;
+                latestSales.forEach((saleInfo, index) => {
+                    var trHtml = '<tr> <td>' + saleInfo.HicriTarihUzun + '</td> <td>' + saleInfo.MiladiTarihUzun + '</td> <td>' + saleInfo.Imsak + '</td> <td>' + saleInfo.Gunes + '</td> <td>' + saleInfo.Ogle + '</td><td>' + saleInfo.Ikindi + '</td><td>' + saleInfo.Aksam + '</td><td>' + saleInfo.Yatsi + '</td></tr>';
+                    $(trHtml).appendTo($('#days').last());
+                });
+
+                todayData = latestSales.find(key => key.MiladiTarihKisa == new Date().toLocaleDateString());
+                todayDataIndex = latestSales.findIndex(key => key.MiladiTarihKisa == new Date().toLocaleDateString());
+
+                showTimeSaniye = kalanSureHesapla(todayData, todayDataIndex, latestSales);
+                resizeNews();
+                timer();
+
+            })
+            /*  debugger
+              //const proxyurl = "https://cors-anywhere.herokuapp.com/";
+              const proxyurl = "";
+              fetch(proxyurl + "https://ezanvakti.herokuapp.com/vakitler?ilce=9541").then(function (result) {
+                  debugger
+  
+                  return result.json()
+  
+              }).catch(error => {
+                  debugger
+              }).then(function (res) {
+                  debugger
+                  if (!res) { 
+                      return;
+                  }
+                  const latestSales = res;
+                  latestSales.forEach((saleInfo, index) => {
+                      var trHtml = '<tr> <td>' + saleInfo.HicriTarihUzun + '</td> <td>' + saleInfo.MiladiTarihUzun + '</td> <td>' + saleInfo.Imsak + '</td> <td>' + saleInfo.Gunes + '</td> <td>' + saleInfo.Ogle + '</td><td>' + saleInfo.Ikindi + '</td><td>' + saleInfo.Aksam + '</td><td>' + saleInfo.Yatsi + '</td></tr>';
+                      $(trHtml).appendTo($('#days').last());
+                  });
+  
+                  todayData = latestSales.find(key => key.MiladiTarihKisa == new Date().toLocaleDateString());
+                  todayDataIndex = latestSales.findIndex(key => key.MiladiTarihKisa == new Date().toLocaleDateString());
+  
+                  showTimeSaniye = kalanSureHesapla(todayData, todayDataIndex, latestSales)
+                  debugger
+                  showTime();
+  
+  
+              })*/
+        }
+
+        fetchLiveSales();
+
+
+        function kalanSureHesapla(todayData, todayDataIndex, latestSales) {
+
+            debugger
+            var dateNow = new Date();
+            var time = dateNow.toLocaleTimeString();
+            /*time = time.split(' ')[4];
+            time = time.split(':');
+            time[0] = parseInt(time[0]) + 3;
+            var tTime = '' ;
+            time.forEach(function (item) {
+                tTime += item + ':';
+            });*/
+
+
+
+
+            var imsak = moment(todayData.Imsak, 'h:mm');
+            var aksam = moment(todayData.Aksam, 'h:mm');
+            var nowTime = moment(time, 'h:mm');
+            console.log(nowTime.isBefore(imsak)); // true
+            console.log(nowTime.isBefore(aksam)); // true            
+
+            var kalanDakika;
+            var kalanSaat;
+            var kalanSaniye;
+            var closestString = '';
+            if (nowTime.isBefore(imsak)) {
+
+                var miladiTarih = miladiTarihReplace(todayData.MiladiTarihKisa);
+                var dateImsak = new Date(miladiTarih + 'T' + todayData.Imsak);
+                kalanDakika = diff_minutes(dateImsak, dateNow);
+                kalanSaniye = kalanDakika * 60;
+                kalanSaat = Math.floor(kalanDakika / 60);
+                kalanDakika = kalanDakika - (kalanSaat * 60);
+                closestString = 'Sahura Kalan : '
+                $('<span class="clock">Sahura</span>').appendTo($("#iftar-sahur").last());
+
+
+            } else if (nowTime.isBefore(aksam)) {
+
+                var miladiTarih = miladiTarihReplace(todayData.MiladiTarihKisa);
+                var dateAksam = new Date(miladiTarih + 'T' + todayData.Aksam);
+                kalanDakika = diff_minutes(dateAksam, dateNow);
+                kalanSaniye = kalanDakika * 60;
+                kalanSaat = Math.floor(kalanDakika / 60);
+                kalanDakika = kalanDakika - (kalanSaat * 60);
+                closestString = 'İftara Kalan : '
+                $('<span class="clock">İftara</span>').appendTo($("#iftar-sahur").last());
+
+            } else {
+                var miladiTarih = miladiTarihReplace(latestSales[todayDataIndex + 1].MiladiTarihKisa);
+                var dateImsak = new Date(miladiTarih + 'T' + latestSales[todayDataIndex + 1].Imsak);
+                kalanDakika = diff_minutes(dateImsak, dateNow);
+                kalanSaniye = kalanDakika * 60;
+                kalanSaat = Math.floor(kalanDakika / 60);
+                kalanDakika = kalanDakika - (kalanSaat * 60);
+                closestString = 'Sahura Kalan : '
+                $('<span class="clock">Sahura</span>').appendTo($("#iftar-sahur").last());
+            }
+
+            kalanSaat = (kalanSaat < 10) ? "0" + kalanSaat : kalanSaat;
+            kalanDakika = (kalanDakika < 10) ? "0" + kalanDakika : kalanDakika;
+            debugger
+            Alert7.alert(closestString + kalanSaat + ':' + kalanDakika);
+            $('button').click(function () {
+                debugger
+                $(".tog").toggleClass("display");
+                $(".tog .fa").toggleClass("view");
+                $("#MyClockDisplay").toggleClass("view");
+                $("#iftar-sahur").toggleClass("view");
+                $(".o").toggleClass("fa-times fa-circle-thin")
+
+            })
+
+
+
+            return kalanSaniye;
+
+
+
+        }
+
+        function diff_minutes(dt2, dt1) {
+
+            var diff = (dt2.getTime() - dt1.getTime()) / 1000;
+            diff /= 60;
+            return Math.abs(Math.round(diff));
+
+        }
+
+        function miladiTarihReplace(todayData) {
+
+            var todayArray = todayData.split('.')
+
+            var dateString = '';
+
+            while (todayArray.length > 0) {
+
+                dateString += todayArray.pop() + '-';
+            }
+
+            return dateString.substring(0, dateString.length - 1);
+
+
+
+
+        }
+
+        $(".sticky-ball").click(function () {
+            $(".tog").toggleClass("display");
+            $(".tog .fa").toggleClass("view");
+            $("#MyClockDisplay").toggleClass("view");
+            $("#iftar-sahur").toggleClass("view");
+            $(".o").toggleClass("fa-times fa-circle-thin")
+        });
+
+        var timer = setInterval(function () {
+
+            var virtualShowTimeSaniye = showTimeSaniye
+            var h = Math.floor(virtualShowTimeSaniye / (60 * 60)); // 0 - 23
+            virtualShowTimeSaniye = virtualShowTimeSaniye - (h * 60 * 60);
+            var m = Math.floor((virtualShowTimeSaniye / 60));
+            virtualShowTimeSaniye = virtualShowTimeSaniye - (m * 60);
+            var s = virtualShowTimeSaniye // 0 - 59   
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+
+            showTimeSaniye--;
+
+        }, 1000);
+
+
+        let floatyInit = () => {
+            let floaties = Floaty.init()
+            // ... use floaties, or don't
+            // you can even add floaties dynamically
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', floatyInit)
+        } else {
+            floatyInit()
+        }
+
+
+
+        $(window).scroll(function () {
+            debugger
+            //$(".sticky-ball").css("top", ((window.innerHeight) / 2) + window.scrollY)
+
+        });
+        $(window).resize(function () {
+
+            resizeNews();
+
+        });
+
+        function resizeNews() {
+            debugger
+
+            $('#container').height(window.innerHeight - document.getElementsByTagName('footer')[0].offsetHeight);
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+    <script src="asset/vendor/mustache/mustache.min.js"></script>
+    <script src="asset/vendor/jquery/jquery.min.js"></script>
+    <script src="asset/vendor/popper/popper.min.js"></script>
+    <script src="asset/vendor/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.13.0/moment.min.js"></script>
+    <script src="floaty.js"></script>
+    <script src="alert7.js"></script>
+
+
+    <!-- Button trigger modal -->
+
+
+
+</body>
+
+</html>
